@@ -9,3 +9,5 @@
 <h3>Problème Cors</h3>
 <img src="captures/4.0Capture.PNG">
 <img src="captures/4.Capture.PNG">
+<h3>Docker file Fron End</h3>
+<img src="captures/6.Capture.PNG">

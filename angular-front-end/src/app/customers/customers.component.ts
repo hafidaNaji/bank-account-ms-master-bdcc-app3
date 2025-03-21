@@ -5,7 +5,7 @@ import {HttpClient} from '@angular/common/http';
   selector: 'app-customers',
   standalone: false,
   templateUrl: './customers.component.html',
-  styleUrl: './customers.component.css'
+  styleUrls: ['./customers.component.css']
 })
 export class CustomersComponent implements OnInit{
   customers : any
@@ -15,6 +15,7 @@ export class CustomersComponent implements OnInit{
     this.http.get("http://localhost:8888/CUSTOMER-SERVICE/customers")
       .subscribe({
         next:data=>{
+          console.log("Données reçues :", data);
           this.customers=data;
         },
         error:err => {
